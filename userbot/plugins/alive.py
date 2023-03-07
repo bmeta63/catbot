@@ -51,7 +51,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**✮ MY BOT IS RUNNING SUCCESSFULLY ✮**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**✮ HEY I AM ALIVE  ✮**"
     CAT_IMG = gvarstatus("ALIVE_PIC")
     caption = cat_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -88,7 +88,7 @@ async def amireallyalive(event):
 temp = """{ALIVE_TEXT}
 **{EMOJI} Database :** `{dbhealth}`
 **{EMOJI} Telethon Version :** `{telever}`
-**{EMOJI} Catuserbot Version :** `{catver}`
+**{EMOJI} DARKMOON Version :** `{catver}`
 **{EMOJI} Python Version :** `{pyver}`
 **{EMOJI} Uptime :** `{uptime}`
 **{EMOJI} Master:** {mention}"""
@@ -98,7 +98,7 @@ def catalive_text():
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
     cat_caption = "**ALIVE**\n"
     cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-    cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+    cat_caption += f"**{EMOJI} DARKMOON Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     cat_caption += f"**{EMOJI} Master:** {mention}\n"
     return cat_caption
